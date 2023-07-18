@@ -1,0 +1,5 @@
+document representa un objeto compuesto de todo el 
+documento, entonces tiene varias funciones asociadas
+para seleccionar cosas de este documento se usa
+el metodo .querySelector("cosa a seleccionar")
+tambien esta el getElementById o ByCLassName... etc
