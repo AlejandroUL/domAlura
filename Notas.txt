@@ -3,3 +3,38 @@ documento, entonces tiene varias funciones asociadas
 para seleccionar cosas de este documento se usa
 el metodo .querySelector("cosa a seleccionar")
 tambien esta el getElementById o ByCLassName... etc
+
+Es mejor seleccionar por DATA ATRIBUTES
+por si despues se le cambia la clase. se pone asi
+despues de la clase data-form-btn. en el query selector
+se le pone eso entre corchetes así ["data-form-btn"],
+en realidad lo unico impresindible es data.
+
+Listener es un evento que desencadena una accion
+puede ser un click.
+btn.addEventListener("click",function () {
+    console.log("crear una tarea")
+})
+addeventlistener agrega un evento que desencadenara
+que se ejecute una funcion, en este caso el evento
+es click y desdencadena la funcion.
+dentro de la funcion se puede poner un queryselector
+para que cuando se le de click se seleccione lo que
+se quiera seleccionar que puede ser de un input.
+
+Como hacer que no se recargue la pagina cada que se
+da click en el boton.
+btn.addEventListener("click",function (evento) {
+    evento.preventDefault();
+}
+se le pone como parametro de la funcion un evento,
+este evento se usa para acceder a los parametros del
+click.
+
+
+
+
+
+
+
+
