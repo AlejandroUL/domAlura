@@ -37,6 +37,32 @@ ESTO ES UNA FUNCION QUE NO TIENE EL NOMBRE ASIGNADO
 SIRVE CUANDO SE QUIERE PASAR LA FUNCION COMO ARGUMENTO
 DE OTRA FUNCION.
 
+Para modificar el html desde js se puede hacer
+lo siguiente.
+
+const createTask = (evento)=> {
+    evento.preventDefault();
+    const input = document.querySelector('[data-form-input]');
+    const value = input.value;
+    const task = document.querySelector('[data-task]');
+    input.value = "";
+    const content = `<div>
+        <i class="far fa-check-square icon"></i>
+        <span class="task">${value}</span>
+        </div>
+        <i class="fas fa-trash-alt trashIcon icon"></i>`;
+    task.innerHTML = content;
+    console.log(content);
+}
+
+En la funcion see creea una constante que tenga las
+comillas alreves para que permita ser modificada con 
+otras variables, dentro de esta se pone el codigo html
+que se quiere insertar con las variables y por ultimo
+se  pone un .innerHTML
+este innerHTML va ligado a una constante que en el HTML
+está vacia y se va a rellenar con lo que uno le ponga.
+
 
 
 
